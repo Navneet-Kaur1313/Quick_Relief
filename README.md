@@ -44,5 +44,6 @@ npm install
 npm start
 
 
-### Made with care 💙 to save lives when it matters most
+**Made with care 💙 to save lives when it matters most.**
+
 
