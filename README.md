@@ -26,6 +26,8 @@
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 
+- **Made with care 💙 to save lives when it matters most.**
+
 ---
 
 ## 🚀 Getting Started
@@ -44,6 +46,6 @@ npm install
 npm start
 
 
-**Made with care 💙 to save lives when it matters most.**
+
 
 
