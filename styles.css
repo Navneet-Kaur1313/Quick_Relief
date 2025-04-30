@@ -1,0 +1,257 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #333;
+}
+/* General Navbar Styling */
+header {
+    background-color: #83c5be;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin:0;
+    line-height: 1;
+    white-space: nowrap;
+    
+  }
+  
+  .tagline {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Navigation Links Styling */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #007BFF; /* Add hover effect */
+  }
+  
+  /* Optional Search Bar Styling */
+  .search-bar {
+    width: 80; /* Increase width */
+    margin: 0 auto; /* Center align */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center content */
+    align-items: center; /* Align vertically *//* Push search bar to the right */
+    text-decoration: underline;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fffcf2;
+    padding: 15px 30px;
+}
+
+.logo {
+    color:252422;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:#252422;
+    text-decoration: none;
+    font-size: 18px;
+    text-decoration:underline;
+    font-style: italic;
+} */
+
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background:white;
+    color:black;
+    padding: 50px 5%;
+    gap: 30px;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color:#333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 20px;
+    color:black;
+    font-family: sans-serif;
+    text-decoration: underline;
+
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Features Section */
+.features {
+    background:white;
+    padding: 50px 20px;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.feature-card {
+    background: #83c5be;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feature-card img {
+    max-width: 80px;
+    height: auto;
+}
+
+.feature-card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* DASHOBARD */
+/* Dashboard Styling */
+.dashboard {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Bar Chart Styling */
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bar {
+    position: relative;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #ecf0f1;
+}
+
+.bar::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: calc(var(--size) * 100%);
+    background-color: var(--color);
+    transition: width 0.5s;
+}
+
+.bar .label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-weight: bold;
+}
+
+  
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #403d39;
+    color: white;
+    font-size: 14px;
+}

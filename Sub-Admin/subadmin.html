@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub-Admin Dashboard | Quick Relief</title>
+    <link rel="stylesheet" href="subadmin.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For charts -->
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>Sub-Admin Panel</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Verify Reports</a></li>
+                <li><a href="#">Resource Management</a></li>
+                <li><a href="#">Alerts</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Welcome, Sub-Admin</h1>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </header>
+
+            <!-- Map & Reports -->
+            <section class="reports-section">
+                <h2>Pending Disaster Reports</h2>
+                <div class="map-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/India_climatic_disaster_risk_map_en.svg/1200px-India_climatic_disaster_risk_map_en.svg.png"
+                     height="500px" width="600px" alt="Map Placeholder">
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Report ID</th>
+                            <th>Location</th>
+                            <th>Disaster Type</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reportTable">
+                        <tr>
+                            <td>101</td>
+                            <td>Delhi</td>
+                            <td>Flood</td>
+                            <td>Pending</td>
+                            <td><button onclick="verifyReport(this)">Verify</button></td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Mumbai</td>
+                            <td>Earthquake</td>
+                            <td>Pending</td>
+                            <td><button onclick="verifyReport(this)">Verify</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Resource Management -->
+            <section class="resource-management">
+                <h2>Resource Allocation</h2>
+                <form id="resourceForm">
+                    <input type="text" id="resourceName" placeholder="Resource Type (e.g., Water, Food)" required>
+                    <input type="number" id="resourceAmount" placeholder="Available Quantity" required>
+                    <button type="submit">Add Resource</button>
+                </form>
+
+                <!-- Resource Chart -->
+                <canvas id="resourceChart"></canvas>
+            </section>
+        </div>
+    </div>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="subadmin.js"></script>
+</body>
+</html>

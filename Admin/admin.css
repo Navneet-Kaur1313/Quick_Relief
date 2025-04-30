@@ -1,0 +1,230 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background:#83c5be;
+    color:black;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    
+    font-weight:bold;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 0;
+}
+
+.sidebar ul li a {
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* .sidebar ul li a {
+    text-decoration: none;
+    color:black;
+    display: block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+} */
+
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+/* Header Styling */
+header {
+    background-color: #f5f5f5;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flex container for content */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* Left-side text content */
+.text-content {
+    max-width: 60%;
+}
+
+h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Right-side image content */
+.image-content img {
+    max-width: 120px;    /* Adjust the image size */
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text-content {
+        max-width: 100%;
+    }
+    
+    .image-content img {
+        max-width: 100px;
+    }
+}
+
+
+/* Dashboard Stats */
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+/* User Management */
+.user-management {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+.user-management table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.user-management th, .user-management td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Add User Form */
+.add-user-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.add-user-form input, .add-user-form select, .add-user-form button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-user-form button {
+    background-color: #006d77;
+    color: white;
+    cursor: pointer;
+}
+
+/* Alerts Management */
+.alerts-management {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.alerts-management form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.alerts-management input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.alerts-management button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.alerts-list {
+    margin-top: 20px;
+}

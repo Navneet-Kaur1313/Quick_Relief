@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Quick Relief</title>
+    <link rel="stylesheet" href="loginstyle.css">
+  
+</head>
+<body>
+    <div class="container">
+        <h2>Create an Account</h2>
+        <form id="signupForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <label for="role">Select Role:</label>
+            <select id="role" required>
+                <option value="admin">Admin</option>
+                <option value="subadmin">Sub-Admin</option>
+                <option value="victim">Victim</option>
+                <option value="authority">Management Authority</option>
+            </select>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

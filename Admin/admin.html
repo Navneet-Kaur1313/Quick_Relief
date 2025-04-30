@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Quick Relief</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Manage Users</a></li>
+            <li><a href="#">Disaster Reports</a></li>
+            <li><a href="#">Alerts & Notifications</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <div class="header-content">
+                <div class="text-content">
+                    <h1>Admin Dashboard</h1>
+                    <b><p>Welcome, Admin.</b></p>
+                    <p>Manage disaster relief operations efficiently.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://cdn-icons-png.flaticon.com/128/18570/18570963.png" alt="Admin Icon">
+                </div>
+            </div>
+        </header>
+        
+
+        <!-- Dashboard Stats -->
+        <section class="dashboard-stats">
+            <div class="stat-card">
+                <h3>Total Active Disasters</h3>
+                <p>5</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending Resource Requests</h3>
+                <p>12</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Users</h3>
+                <p>1,245</p>
+            </div>
+            <div class="stat-card">
+                <h3>Live Notifications</h3>
+                <p>3</p>
+            </div>
+        </section>
+
+       <!-- User Management -->
+<section class="user-management">
+    <h2>Manage Users</h2>
+    <input type="text" id="searchUser" placeholder="Search users...">
+    <br>
+    <br>
+    
+    <!-- Add User Form -->
+    <div class="add-user-form">
+        <input type="text" id="userId" placeholder="User ID" required>
+        <input type="text" id="userName" placeholder="User Name" required>
+        <select id="userRole">
+            <option value="Victim">Victim</option>
+            <option value="Authority">Authority</option>
+            <option value="Sub-Admin">Sub-Admin</option>
+        </select>
+        <button id="addUserBtn">Add User</button>
+    </div>
+<br>
+<br>
+    <table>
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTable">
+            <tr>
+                <td>001</td>
+                <td>John Doe</td>
+                <td>Victim</td>
+                <td><button class="delete-btn">Remove</button></td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Jane Smith</td>
+                <td>Authority</td>
+                <td><button class="delete-btn">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+        <!-- Alerts Management -->
+        <section class="alerts-management">
+            <h2>Send Alerts</h2>
+            <form>
+                <input type="text" placeholder="Enter alert message..." required>
+                <button type="submit">Send Alert</button>
+            </form>
+            <div class="alerts-list">
+                <h3>Sent Alerts</h3>
+                <ul>
+                    <li>Flood Warning - 12 March 2025</li>
+                    <li>Earthquake Alert - 10 March 2025</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

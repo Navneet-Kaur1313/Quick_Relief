@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #83c5be;
+    padding: 20px;
+    color:black;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    color:black;
+    text-decoration: none;
+    display: block;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color:black;
+    display: block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+.sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Report Disaster */
+.report-disaster {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.report-disaster form {
+    display: flex;
+    flex-direction: column;
+}
+
+.report-disaster input,
+.report-disaster textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.report-disaster button {
+    background: #83c5be;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Emergency Alerts */
+.emergency-alerts {
+    background: #ffeb3b;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.alert {
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* Nearby Resources */
+.nearby-resources {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.map-container img {
+    width: 100%;
+    border-radius: 8px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victim Dashboard - Quick Relief</title>
+    <link rel="stylesheet" href="victim.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h2>Victim Dashboard</h2>
+        <ul>
+            <li><a href="#">Report Disaster</a></li>
+            <li><a href="#">Emergency Alerts</a></li>
+            <li><a href="#">Safety Measures</a></li>
+            <li><a href="#">Nearby Resources</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Report Disaster Section -->
+        <section class="report-disaster">
+            <h2>Report a Disaster</h2>
+            <form>
+                <label>Location:</label>
+                <input type="text" placeholder="Enter your location">
+
+                <label>Upload Image:</label>
+                <input type="file" accept="image/*">
+
+                <label>Description:</label>
+                <textarea placeholder="Describe the situation"></textarea>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+
+        <!-- Emergency Alerts -->
+        <section class="emergency-alerts">
+            <h2>Live Emergency Alerts</h2>
+            <div class="alert">🚨 Flood Alert in Mumbai - Stay Safe!</div>
+            <div class="alert">⚠️ Earthquake Warning in Delhi - Evacuate Safely!</div>
+        </section>
+
+        <!-- Nearby Resources -->
+        <section class="nearby-resources">
+            <h2>Nearby Resources</h2>
+            <input type="text" placeholder="Search for shelters, hospitals...">
+            
+            <section class="precaution-section">
+                <h2>See Precautions & Download Here</h2>
+                <p>Download PDFs with safety measures for different disasters and stay prepared even in offline mode.</p>
+                <ul>
+                    <li><a href="precautions/flood.pdf" download>Flood Safety Guide</a></li>
+                    <li><a href="precautions/earthquake.pdf" download>Earthquake Safety Guide</a></li>
+                    <li><a href="precautions/fire.pdf" download>Fire Safety Guide</a></li>
+                    <li><a href="precautions/cyclone.pdf" download>Cyclone Safety Guide</a></li>
+                </ul>
+            </section>
+
+            <!-- Image Placeholder -->
+            <section class="image-placeholder">
+                <img src="disaster-map-placeholder.jpg" alt="Disaster Map">
+            </section>
+            <div class="map-container">
+                <img src="https://media.istockphoto.com/id/1791484127/vector/procedure-of-evacuation-emergency-map-tiny-people-notice-about-safe-exit-from-building.jpg?s=612x612&w=0&k=20&c=JiUcqdgSQd_u4a4hhEBxSKUMT5rJXfI2Xcm9Q6lB81A=" alt="Map Placeholder">
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

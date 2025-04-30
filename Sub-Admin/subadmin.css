@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* Full-screen height */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #83c5be;
+    color:black;
+    padding: 20px;
+    height: 100vh;
+    position: fixed; /* Fix sidebar */
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+.sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    color:black;
+    text-decoration: none;
+ 
+} ;
+.sidebar ul li a {
+    text-decoration: none;
+    color:black;
+    display: block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px; /* Adjust for sidebar */
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Reports Section */
+.reports-section {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.map-container {
+    display: flex;
+    justify-content: center; /* Center the map */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.map-container img {
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    
+}
+
+
+#map {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+button {
+    background: #0077b6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Resource Management */
+.resource-management {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+canvas {
+    max-width: 100%;
+}

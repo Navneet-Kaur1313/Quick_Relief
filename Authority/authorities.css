@@ -1,0 +1,151 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    background-color: #83c5be;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color:black;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color:black;
+    display: block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.profile-img {
+    width: 80px;
+    
+}
+
+/* Resource Collaboration */
+.resource-collaboration {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resource-box {
+    padding: 10px;
+    background: #eef7f6;
+    border-radius: 5px;
+}
+
+.request-btn, .accept-btn {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.request-btn {
+    background: #f9c74f;
+    color: black;
+}
+
+.accept-btn {
+    background: #90be6d;
+    color: white;
+}
+
+/* Victim Assistance */
+.victim-assistance {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+#wel
+{
+    background-color: #83c5be;
+}
+th {
+    background: #ddd;
+}
+
+.high-priority {
+    color: red;
+    font-weight: bold;
+}
+
+.medium-priority {
+    color: orange;
+}
+
+.assist-btn {
+    background: #0077b6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.assist-btn:hover {
+    background: #005f99;
+}

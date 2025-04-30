@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Authorities Dashboard</title>
+    <link rel="stylesheet" href="authorities.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Authorities Panel</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Resource Collaboration</a></li>
+                <li><a href="#">Victim Assistance</a></li>
+                <li><a href="#">Alerts</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1 id="wel">Welcome, Management Authority</h1>
+                <img src="https://cdn-icons-png.flaticon.com/128/4299/4299305.png" alt="Authority Profile" class="profile-img">
+            </header>
+
+            <!-- Resource Collaboration -->
+            <section class="resource-collaboration">
+                <h2>Resource Collaboration</h2>
+                <div class="resource-box">
+                    <p><strong>Current Resources Available:</strong></p>
+                    <ul>
+                        <li>1000 Water Bottles</li>
+                        <li>500 Food Packets</li>
+                        <li>200 Medical Kits</li>
+                    </ul>
+                    <button class="request-btn">Request More</button>
+                    <button class="accept-btn">Accept Requests</button>
+                </div>
+            </section>
+
+            <!-- Victim Assistance -->
+            <section class="victim-assistance">
+                <h2>Victim Assistance</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case ID</th>
+                            <th>Victim Name</th>
+                            <th>Priority</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1001</td>
+                            <td>Amit Sharma</td>
+                            <td><span class="high-priority">High</span></td>
+                            <td><button class="assist-btn">Assist Now</button></td>
+                        </tr>
+                        <tr>
+                            <td>#1002</td>
+                            <td>Priya Verma</td>
+                            <td><span class="medium-priority">Medium</span></td>
+                            <td><button class="assist-btn">Assist Now</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
