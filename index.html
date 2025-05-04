@@ -5,7 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Relief - Disaster Management</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Add to <head> -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!-- Before </body> -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -13,16 +28,14 @@
     <header>
         <div class="navbar">
           <div class="logo-container">
-            <img src="minor logo.png" alt="Quick Relief Logo" class="logo">
+            <img src="images/logo2.0.png" alt="Quick Relief Logo" class="logo">
             <h1>Quick-Relief</h1>
           </div>
-          <div class="search-bar">
-            <input type="text" placeholder="Search...">
-          </div>
+          
           
           <nav>
             <ul class="nav-links">
-              <li><a href="#home">Home</a></li>
+              
               <li><a href="#about">About</a></li>
               <li><a href="#features">Features</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -36,45 +49,81 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
-            <h1>Quick Relief</h1>
-            <p>
-                A smart disaster management platform for seamless rescue operations, 
-                real-time coordination, and resource sharing.<br>
-                 Connect victims, authorities, and rescue teams on a collaborative platform 
-                 to ensure fast and efficient disaster response.    
+            <h1 class="highlight-title">Quick Relief</h1>
+            <p class="intro-text">
+                <span class="highlight">A smart disaster management platform</span> for seamless rescue operations,
+                real-time coordination, and efficient resource sharing.
+                <br><br>
+                Connect <strong>victims</strong>, <strong>authorities</strong>, and <strong>rescue teams</strong> through a unified, collaborative platform to ensure <span class="highlight">fast and efficient response</span>.
             </p>
-            <b>
-            <p class="tagline">"Every Second Counts, Every Resource Matters"</p></b>
+            <p class="tagline">"Every Second Counts, Every Resource Matters"</p>
+           <br> <a href="#features" class="cta-button">🚨 See How It Works</a>
         </div>
-        <div class="hero-image">
-            <img src="https://hubnetwork.in/wp-content/uploads/2024/08/Webp.net-resizeimage-55.jpg" alt="Disaster Relief Efforts">
-        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel">
+              <div class="carousel-track">
+                <img src="https://hubnetwork.in/wp-content/uploads/2024/08/Webp.net-resizeimage-55.jpg" alt="Earthquake">
+                <img src="images/two.jpg" alt="Flood">
+                <img src="images/third.png" alt="Drought">
+                <img src="images/four.avif" alt="Wildfire">
+                <img src="https://hubnetwork.in/wp-content/uploads/2024/08/Webp.net-resizeimage-55.jpg" alt="Earthquake Duplicate">
+      <img src="images/two.jpg" alt="Flood Duplicate">
+              </div>
+            </div>
+          </div>
+          
     </section>
-
-    
-
     <!-- Features Section -->
-    <section class="features">
-        <h2>Key Features</h2>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <img src="https://cdn-icons-png.flaticon.com/128/17895/17895681.png" alt="Real-time Alerts">
-                <p>Real-time Alerts</p>
-            </div>
-            <div class="feature-card">
-                <img src="https://cdn-icons-png.flaticon.com/128/2936/2936774.png" alt="Resource Sharing">
-                <p>Resource Sharing</p>
-            </div>
-            <div class="feature-card">
-                <img src="https://cdn-icons-png.flaticon.com/128/1055/1055644.png" alt="Disaster Reporting">
-                <p>Disaster Reporting</p>
-            </div>
-            <div class="feature-card">
-                <img src="https://cdn-icons-png.flaticon.com/128/13322/13322243.png" alt="Collaboration System">
-                <p>Collaboration System</p>
-            </div>
-        </div>
-    </section>
+<!-- Unified Key Features Section -->
+<section id="features" class="features-section">
+    <h2 class="features-title">Key Features</h2>
+    <div class="features-grid">
+      <!-- Feature Card 1 -->
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/10039/10039977.png" alt="Real-time Coordination" class="feature-icon" />
+        <h3>Real-time Coordination</h3>
+        <p>Coordinate instantly with rescue teams, authorities, and victims via live data streams and alerts.</p>
+      </div>
+  
+      <!-- Feature Card 2 -->
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3523/3523063.png" alt="Resource Sharing" class="feature-icon" />
+        <h3>Resource Sharing</h3>
+        <p>Track, share, and allocate critical resources like food, shelter, and medical aid effectively.</p>
+      </div>
+  
+      <!-- Feature Card 3 -->
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Role-Based Dashboards" class="feature-icon" />
+        <h3>Role-Based Dashboards</h3>
+        <p>Custom dashboards for victims, responders, and admins for tailored information access and control.</p>
+      </div>
+  
+      <!-- Feature Card 4 -->
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/17895/17895681.png" alt="Real-time Alerts" class="feature-icon" />
+        <h3>Real-time Alerts</h3>
+        <p>Send and receive immediate disaster notifications and guidance alerts across the network.</p>
+      </div>
+  
+      <!-- Feature Card 5 -->
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/2936/2936774.png" alt="Disaster Reporting" class="feature-icon" />
+        <h3>Disaster Reporting</h3>
+        <p>Allow users and responders to submit field reports, photos, and incident data efficiently.</p>
+      </div>
+  
+      <!-- Feature Card 6 -->
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/13322/13322243.png" alt="Collaboration System" class="feature-icon" />
+        <h3>Collaboration System</h3>
+        <p>Enable streamlined communication and decision-making between involved stakeholders.</p>
+      </div>
+    </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="100"> ... </div>
+
+  </section>
+  
     <!-- DASHOBOARD -->
 
     <div class="dashboard">
